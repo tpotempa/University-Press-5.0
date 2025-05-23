@@ -10,7 +10,7 @@ import org.hibernate.annotations.NaturalId;
 public class Category implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY)
     private Long id;
 
     @NaturalId

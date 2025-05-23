@@ -11,7 +11,7 @@ import org.hibernate.annotations.NaturalId;
 public class Author implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(length = 50, nullable = false)

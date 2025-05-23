@@ -14,7 +14,7 @@ import org.hibernate.annotations.NaturalId;
 public abstract class Book implements Serializable {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NaturalId
